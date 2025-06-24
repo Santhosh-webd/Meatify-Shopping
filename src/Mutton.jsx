@@ -2,6 +2,7 @@ import React from 'react';
 import muttondetails from "./Muttondetails";
 import redsketch from "./images/redsketchnew.png"
 import Swal from 'sweetalert2'
+import { Footer } from './Footer';
 
 
 export const Mutton = ({ cartdetails, setCartdetails }) => {
@@ -57,8 +58,7 @@ export const Mutton = ({ cartdetails, setCartdetails }) => {
           )}
         </div>
       </div>
-
-
+      <Footer></Footer>
     </div>
   )
 }
