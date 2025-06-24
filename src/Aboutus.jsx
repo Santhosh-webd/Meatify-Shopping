@@ -43,7 +43,7 @@ export const Aboutus = ({setHeaddesign}) => {
 
         </div>
         <div className='child1aboutus'>
-          <img src={aboutusgif} alt="" width="100%" />
+          <img src={aboutusgif} alt="" width="100%" loading="lazy"/>
         </div>
       </div>
       <div className="mainchooseus auschooseus">
