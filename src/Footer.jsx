@@ -8,58 +8,63 @@ import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return (
-        <div>
-            <div className="mainfooter">
-                <div className="footerlogoanddesc">
-                    <div className="footerlogo">
-                        <img src={logoimg} alt="" />
-                        <h2 className='meatify'><span>M</span>EATIF<span>Y</span></h2>
+        <footer className="mainfooter">
+            <div className="footer-container">
+                <div className="footer-top">
+                    <div className="footer-brand">
+                        <div className="footer-logo">
+                            <img src={logoimg} alt="Meatify Logo" />
+                            <h2 className='meatify'><span>M</span>EATIF<span>Y</span></h2>
+                        </div>
+                        <p className="footer-description">Fresh & Hygienic Meat Delivered to Your Doorstep</p>
                     </div>
-                </div>
-                <div className="footerflex">
-                    <div className='quicklinks'>
-                        <ul>
-                            <li className='footerlihead'>Quick Links</li>
-                            <Link to="/"><li>🏠 Home</li></Link>
-                            <Link to="/aboutuspg"><li>🛍️ About Us</li></Link>
-                            <Link to="/productpg"><li>🍖 Product</li></Link>
-                            <Link to="/cartpg"><li>📦 Cart</li></Link>
-                            <Link to="#"><li>📞 Login</li></Link> 
-                        </ul>
+
+                    <div className="footer-links">
+                        <div className='footer-column'>
+                            <h3 className='footer-heading'>Quick Links</h3>
+                            <ul className="footer-list">
+                                <li><Link to="/">🏠 Home</Link></li>
+                                <li><Link to="/aboutuspg">🛍️ About Us</Link></li>
+                                <li><Link to="/productpg">🍖 Products</Link></li>
+                                <li><Link to="/cartpg">📦 Cart</Link></li>
+                                <li><Link to="#">📞 Login</Link></li>
+                            </ul>
+                        </div>
+
+                        <div className="footer-column">
+                            <h3 className='footer-heading'>Contact Us</h3>
+                            <ul className="footer-list">
+                                <li>☎️ +91 90581 16583</li>
+                                <li>📧 meatify@abc.com</li>
+                                <li>🏢 31, Meat Street, Chennai</li>
+                            </ul>
+                        </div>
+
+                        <div className="footer-column">
+                            <h3 className='footer-heading'>Legal</h3>
+                            <ul className="footer-list">
+                                <li>📜 Privacy Policy</li>
+                                <li>⚖️ Terms & Conditions</li>
+                                <li>🚚 Shipping Policy</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className="customservice">
-                        <ul>
-                            <li className='footerlihead'>Contact Us</li>
-                            <li>☎️ Phone: +91 90581 16583</li>
-                            <li>📧 Email: meatify@abc.com</li>
-                            <li>🏢 Address: 31, Meat Street,<br /> Chennai, India</li>
-                        </ul>
-                    </div>
-                    <div className="legallinks">
-                        <ul>
-                            <li className='footerlihead'>Legal Links</li>
-                            <li>📜 Privacy Policy</li>
-                            <li>⚖️ Terms & Conditions</li>
-                            <li>🚚 Shipping & Return Policy</li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="footermainhr">
-                    <hr className='footerhr'/>
                 </div>
 
-                <div className="socialmedialink">
-                    <ul>
-                        <li><img src={facebook} alt="" /></li>
-                        <li><img src={instagram} alt="" /></li>
-                        <li><img src={twitter} alt="" /></li>
-                        <li><img src={linkedin} alt="" /></li>
-                    </ul>
-                </div>
-                <div className="rights">
-                    <p>©2025 Santhosh. All Rights Reserved</p>
+                <div className="footer-divider"></div>
+
+                <div className="footer-bottom">
+                    <div className="social-links">
+                        <a href="#" aria-label="Facebook"><img src={facebook} alt="Facebook" /></a>
+                        <a href="#" aria-label="Instagram"><img src={instagram} alt="Instagram" /></a>
+                        <a href="#" aria-label="Twitter"><img src={twitter} alt="Twitter" /></a>
+                        <a href="#" aria-label="LinkedIn"><img src={linkedin} alt="LinkedIn" /></a>
+                    </div>
+                    <div className="copyright">
+                        ©2025 Santhosh. All Rights Reserved
+                    </div>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
